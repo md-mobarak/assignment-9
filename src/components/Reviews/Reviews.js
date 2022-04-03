@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Reviews = () => {
+
     return (
-        <div>
-            <h1>hello</h1>
-        </div>
+        <div></div>
     );
+
 };
 
 export default Reviews;

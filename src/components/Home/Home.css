@@ -1,0 +1,55 @@
+.products {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 60px 30px;
+
+
+}
+
+.products-info {
+    width: 50%;
+    padding: 20px;
+
+    position: relative;
+}
+
+.products-info h1 {
+    font-weight: 700;
+    font-size: 70px;
+    color: #5F1EE8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.products-info p {
+    text-align: justify;
+    color: rgba(3, 7, 247, 0.836);
+    font-size: 18px;
+}
+
+.products-info button {
+    padding: 10px 20px;
+    background-color: rgba(2, 146, 9, 0.801);
+    font-size: 20px;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+.customer-review h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.customer-review button {
+    position: relative;
+    left: 40%;
+    padding: 10px 30px;
+    background-color: #5F1EE8;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+
+}

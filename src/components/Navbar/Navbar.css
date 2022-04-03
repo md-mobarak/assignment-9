@@ -1,0 +1,24 @@
+.all-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    font-size: large;
+
+
+}
+
+.all-nav a {
+    text-decoration: none;
+}
+
+.active-link {
+    color: rgb(172, 12, 12);
+}
+
+.link {
+    color: teal;
+}
+
+.link:hover {
+    color: rgb(68, 12, 172);
+}
