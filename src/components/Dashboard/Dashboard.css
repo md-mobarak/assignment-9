@@ -1,0 +1,15 @@
+.all-Chart {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px;
+}
+
+.month-sell {
+    color: rgb(161, 96, 223);
+    text-align: center;
+}
+
+.investment {
+    color: rgb(161, 96, 223);
+    text-align: center;
+}

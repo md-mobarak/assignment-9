@@ -1,5 +1,6 @@
 import React from 'react';
 import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import './Dashboard.css'
 
 const DashBoard = () => {
     const data = [
@@ -41,27 +42,29 @@ const DashBoard = () => {
         }
     ]
     return (
-        <div>
+        <div className='all-Chart'>
             <div>
-                <LineChart width={730} height={250} data={data}
+                <h1 className='month-sell'>MONTH WISE SELL</h1>
+                <LineChart width={500} height={350} data={data}
                     margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="month" />
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Line type="monotone" dataKey="investment" stroke="#8884d8" />
-                    <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
+                    <Line type="monotone" dataKey="sell" stroke="#8884d8" />
+                    <Line type="monotone" dataKey="sell" stroke="#82ca9d" />
                 </LineChart>
             </div>
             <div>
-                <ComposedChart width={730} height={250} data={data}>
+                <h1 className='investment'>Investment vs revenue</h1>
+                <ComposedChart width={500} height={350} data={data}>
                     <XAxis dataKey="month" />
                     <YAxis />
                     <Tooltip />
                     <Legend />
                     <CartesianGrid stroke="#f5f5f5" />
-                    <Area type="monotone" dataKey="sell" fill="#8884d8" stroke="#8884d8" />
+                    <Area type="monotone" dataKey="" fill="#8884d8" stroke="#8884d8" />
                     <Bar dataKey="investment" barSize={20} fill="#413ea0" />
                     <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
                 </ComposedChart>
