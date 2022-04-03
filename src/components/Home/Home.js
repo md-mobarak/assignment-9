@@ -7,8 +7,8 @@ import './Home.css'
 const Home = () => {
     const navigate = useNavigate()
     const [review, setReview] = useReviews()
-    let three = review.slice(0, 3)
-    console.log(three);
+    let threeItems = review.slice(0, 3)
+    console.log(threeItems);
     const img = 'https://img.freepik.com/free-photo/pair-trainers_144627-3799.jpg?t=st=1649001163~exp=1649001763~hmac=2c21a116bf8311e566bd72395ccc9ff80915abf330bbb4790cd2f3ee6081d479&w=740'
     return (
         <div>
@@ -28,12 +28,18 @@ const Home = () => {
             </div>
             <section className='customer-review'>
                 <h1>Customer Review(3)</h1>
-                <button onClick={() => navigate(`/reviews/`)}>See All Reviews</button>
-                {
+                <div className='rating-all-card'>
+                    {
 
-                    three.map(pd => <p>{pd.name}</p>)
-                }
+                        threeItems.map(pd => <div className='rating-card'>
+                            <p>{pd.name}</p>
+                            <img src={pd.img} width="100px" height="80px" alt="" />
+                            <p>Rating:{pd.rating}</p>
+                        </div>)
+                    }
 
+                </div>
+                <button onClick={() => navigate(`/reviews`)}>See All Reviews</button>
             </section>
         </div>
     );
