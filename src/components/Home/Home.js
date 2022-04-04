@@ -35,8 +35,6 @@ const Home = () => {
                     {
                         threeItems.map(card => <Card card={card}></Card>)
                     }
-
-
                 </div>
                 <button onClick={() => navigate(`/reviews`)}>See All Reviews</button>
             </section>

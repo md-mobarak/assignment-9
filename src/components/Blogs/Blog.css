@@ -1,0 +1,15 @@
+.all-blog {
+    margin: 20px 30px;
+}
+
+.all-blog h1 {
+    color: #5F1EE8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.all-blog p {
+    text-align: justify;
+    color: rgba(3, 7, 247, 0.836);
+    font-size: 18px;
+}
