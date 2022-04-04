@@ -1,12 +1,12 @@
-# Production  Quality
+# Site Name: Production  Quality
 
-# Live site https://fastidious-melomakarona-d5dd1f.netlify.app
+# Live site https://fastidious-melomakarona-d5dd1f.netlify.app/
 
 # Bullet Point
    * DashBoard With Chart
    * Customer  Reviews
    * Navbar With Active Link
-   * Bullet list item 2
+   * site name Production Quality
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
