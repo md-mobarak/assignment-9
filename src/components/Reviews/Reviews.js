@@ -18,7 +18,7 @@ const Reviews = () => {
                         <p>Rating:{pd.rating}</p>
                     </div>)
                 }
-                <button className='back' onClick={() => navigate(-1)}>Back</button>
+                <button className='back-btn' onClick={() => navigate(-1)}>Back</button>
             </div>
 
         </div>

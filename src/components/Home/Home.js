@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
+import Card from '../Card/Card';
 import Reviews from '../Reviews/Reviews';
 import './Home.css'
 
@@ -29,14 +30,12 @@ const Home = () => {
             <section className='customer-review'>
                 <h1>Customer Review(3)</h1>
                 <div className='rating-all-card'>
-                    {
 
-                        threeItems.map(pd => <div className='rating-card'>
-                            <p>{pd.name}</p>
-                            <img src={pd.img} width="100px" height="80px" alt="" />
-                            <p>Rating:{pd.rating}</p>
-                        </div>)
+
+                    {
+                        threeItems.map(card => <Card card={card}></Card>)
                     }
+
 
                 </div>
                 <button onClick={() => navigate(`/reviews`)}>See All Reviews</button>
