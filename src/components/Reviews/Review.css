@@ -5,17 +5,23 @@
     grid-gap: 60px;
 }
 
+.container h1 {
+    text-align: center;
+}
+
 .single-card {
     background-color: #5F1EE8;
     text-align: center;
-    width: 117px;
-    height: 190px;
+    width: 210px;
+    height: 260px;
     border-radius: 20px;
     color: white;
+    padding: 8px;
 }
 
 .all-card img {
     border-radius: 60%;
+    margin: 15px
 }
 
 .review-container {
@@ -31,4 +37,9 @@
     color: white;
     border-radius: 10px;
     border: 0;
+}
+
+.single-card p {
+    margin: 0;
+
 }

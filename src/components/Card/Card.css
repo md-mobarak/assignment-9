@@ -1,8 +1,17 @@
 .rating-card {
     background-color: #5F1EE8;
     text-align: center;
-    width: 117px;
-    height: 190px;
+    width: 210px;
+    height: 260px;
     border-radius: 20px;
     color: white;
+    padding: 8px;
+}
+
+.rating-card p {
+    margin: 0;
+}
+
+.rating-card img {
+    margin: 15px;
 }
